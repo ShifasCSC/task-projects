@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* kids must have style section */
+/* shoe index ends */
+
+.shoes{
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: blueviolet; */
+    padding-left: 10px;
+    /* overflow-x: auto; */
+    overflow-y: hidden;
+    /* width: 100%; */
+    height: 550px;
+    overflow: auto;
+}
+.shoe1{
+height: 300px;
+width: 400px;
+object-fit: cover;
+}
+.sheo1>img{
+    width: 100%;
+    height: 100%;
+}
+.shoe2{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+.sheo2>img{
+     width: 100%;
+     height: 100%;
+}
+.shoe3{
+     height: 300px;
+     width: 400px;
+     object-fit: cover;
+}
+.sheo3>img{
+     width: 100%;
+   height: 100%;
+ }
+ .shoe4{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+ .sheo4>img{
+     width: 100%;
+     height: 100%;
+ }
+ .shoe5{
+height: 300px;
+width: 400px;
+object-fit: cover;
+}
+.sheo5>img{
+    width: 100%;
+    height: 100%;
+}
+/* .shoes::-webkit-scrollbar-track{
+    background-color: rgb(119, 169, 197);
+}
+.shoes::-webkit-scrollbar-thumb{
+
+    background-color:yellow;
+    border: 3px solid black;
+} */
+ .father{
+    overflow:auto;
+    overflow-y: hidden;
+    height: 700px;
+    /* width: 50px; */
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(8, 7, 7);
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; */
+ }
+ .father.left {
+    left: 0;
+ }
+ .father.right {
+    right: 0;
+ }
+.son{
+    display: flex;
+    /* height: 40px; */
+    width: 100%;
+}
+.son>img{
+    flex-shrink: 0;
+    height: 300px;
+    width: calc(100% / 5);
+    object-fit: cover;
+    margin: 5px;
+}
+.dau{
+    display: flex;
+    /* height: 40px; */
+    width: 100%;
+}
+.dau>img{
+    flex-shrink: 0;
+    height: 300px;
+    width: calc(100% / 5);
+    object-fit: cover;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:992px) and (max-width:1199.98px){
+    
+    .four{
+        font-size: 270px;
+    }
+    .sales{
+        font-size: 10px;
+        margin-top:-75px;
+        margin-left: 450px;
+    }
+    .products{
+        font-size: 20px;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px){
+    .four{
+        font-size:135px ;
+    }
+    .puma{
+        height: 30px;
+        width: 30px;
+    }
+    .right{
+        display: none;
+    }
+    .sale{
+        margin-left: 52.5px;
+        margin-bottom: 22.5px;
+        font-size: 5px;
+
+    }
+    .sales{
+        font-size: 10px;
+        margin-top:-75px;
+        margin-left: 450px;
+    }
+    .background{
+        min-height:40vh ;
+    }
+    .products{
+        font-size: 13px;
+    }
+}
+@media (min-width:576px) and (max-width:767.98px){
+    .four{
+        font-size:67.1px ;
+    }
+    .puma{
+        height: 15px;
+        width: 15px;
+    }
+    .right{
+        display: none;
+    }
+    .sale{
+        margin-left: 32.2px;
+        margin-bottom: 32.2px;
+        font-size: 2.9px;
+    }
+    .background{
+        min-height: 20vh;
+    }
+    .sales{
+        font-size: 4px;
+        margin-top:-32.2px;
+        margin-left: 225px;
+    }
+    .products{
+        font-size: 6.5px;
+    }
+}
+@media (min-width:300px) and (max-width:575.98px){
+    .four{
+        font-size:33.5px ;
+    }
+    .puma{
+        height: 10px;
+        width: 10px;
+    }
+    .right{
+        display: none;
+    }
+    .sale{
+        margin-left: 16.1px;
+        margin-bottom: 16.1px;
+        font-size: 2.3px;
+    }
+    .sales{
+        font-size: 1px;
+        margin-top:-16.5px;
+        margin-left: 112.5px;
+    }
+    .background{
+        min-height: 10vh;
+    }
+    .products{
+        font-size: 3.5px;
+    }
+}
