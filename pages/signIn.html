@@ -3,157 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODIN</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg px-5 mx-5">
-        <div class="container-fluid">
-            <img src="../images/pic1.svg" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item pe-4">
-                <a class="nav-link active" aria-current="page" href="../index.html" style="font-family: Caesar Dressing, system-ui; font-size: 20px;">THE ODIN PROJECT</a>
-              </li>
-            </ul>
-            <span class="navbar-text" >
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item pe-4">
-                      <a class="nav-link active" aria-current="page" href="../pages/allPaths.html">All Paths</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                      <a class="nav-link" href="../pages/about.html">About</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                      <a class="nav-link" href="../pages/community.html">Community</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                      <a class="nav-link" href="../pages/support.html">Support Us</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                      <a class="nav-link" href="../pages/signIn.html">Sign in</a>
-                    </li>
-                   <a href="../pages/getStarted.html"> <button type="button" class="btn btn-success">Get Started </button>
-                   </a>
-                  </ul>
-            </span>
-          </div>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg px-5 mx-5 border-bottom ">
+   <div class="container-fluid">
+       <img src="../images/pic1.svg" alt="">
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarText">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item pe-4">
+        <a class="nav-link active" aria-current="page" href="../index.html" style="font-family: Caesar Dressing, system-ui; font-size: 20px;">THE ODIN PROJECT</a>
+      </li>
+    </ul>
+    <span class="navbar-text" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item pe-4">
+           <a class="nav-link active" aria-current="page" href="../pages/allPaths.html">All Paths</a>
+         </li>
+         <li class="nav-item pe-4">
+           <a class="nav-link" href="../pages/about.html">About</a>
+         </li>
+         <li class="nav-item pe-4">
+           <a class="nav-link" href="../pages/community.html">Community</a>
+         </li>
+         <li class="nav-item pe-4">
+           <a class="nav-link" href="../pages/support.html">Support Us</a>
+         </li>
+         <li class="nav-item pe-4">
+           <a class="nav-link" href="../pages/signIn.html">Sign in</a>
+         </li>
+        <a href="../pages/getStarted.html"> <button type="button" class="btn btn-success">Get Started</button>
+        </a>
+       </ul>
+       
+    </span>
+  </div>
+     </div>
+    </nav>
 
-      <div class="container text-center">
-        <h2 class="pt-4">Support the Project</h2>
-        <p class=" w-75 pt-4 pb-4 text-secondary" style="padding-left: 22%; font-size: 17px;">From the very begin Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum qui labore ad fugiat? Excepturi distinctio et facilis, illo veniam officia ipsam atque delectus mollitia? Ad hic consequuntur .</p>
-         <button type="button" class="btn btn-success px-5 py-3 ">Donate now!</button>
+      <div class="container text-center pt-5">
+        <h3 class="fw-bold">Sign in to your account</h3>
+        <p>Or<u>sign up for a new account</u></p>
+
+      </div>
+
+      <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+            <div class="card mt-4">
+                <div class="card-body">
+    <form>
+        <div class="form-group pt-2">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" >
+        </div>
+        <div class="form-group pt-3">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" >
+        </div>
+        <div class="form-group form-check pt-4 ">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+            <a href="#" class="float-end text-dark">Forgot your password?</a>
+        </div>
+        <button type="submit" class="btn btn-success btn-block w-100 mt-4">Sign in</button>
+        <p class="text-center mt-4">Or continue with</p>
+        <div class="text-center d-flex justify-content-center align-items-center py-4">
+            <button type="button" class="btn btn-light border btn-block px-5 py-2 me-3">
+                <span><i class="fab fa-github px-2 fs-4"></i></span>
+            </button>
+            <button type="button" class="btn btn-light btn-block border px-5 py-2">
+                <span ><i class="fab fa-google fs-5"></i></span>
+            </button>
+        </div>
+    </form>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <div class="container-fluid bg-light">
-      <div class="container py-5 w-50 my-5  mt-5">
-        
-        <h3 class=" text-center py-5">Frequently Asked Questions</h3>
-        
-        <h5>How will my money be used?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">Your money will be used to pay for the costs of running The Odin Project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima odio distinctio, vero assumenda dolorem consequuntur explicabo eaque, tempore vitae in repellat esse! Quisquam animi mollitia neque labore totam modi! <u class="text-primary">Open Collective website.</u></p>
-
-        <h5>How can I donate?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">You can donate via <u class="text-primary">Open Collective</u>, by setting up a recurring donation or with a one time payment.</p>
-
-        <h5>What form of payments can I use?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">You can usually pay by Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi aut perferendis atque distinctio neque architecto veniam hic, eligendi consequatur ea perspiciatis quisquam dolor odit sapiente maiores .</p>
-
-        <h5>What happens if you receive more donations than needed?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">Any extra money that Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore autem eligendi fuga laborum, incidunt, eum iusto repellat modi labore excepturi aperiam mollitia harum maiores et illum officiis maxime project.</p>
-
-        <h5>How do I cancel my recurring donation?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">You can cancel your recurring donation at any time through your Open Collective profile.</p>
-
-        <h5>What are the benefits of donating?</h5>
-        <p class="text-secondary" style="font-size: 17px;">Your donation helps us continue to provide a world-class and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, autem harum sequi recusandae ipsum quod molestias eius ex, fugiat repellat obcaecati, sit numquam ipsam voluptas! Est odit dolores consequatur autem.</p>
-        <p class="text-secondary pb-3" style="font-size: 17px;">In additon to the above, donors get a special 'backer' role in our discord server as a small bit of recognition.</p>
-
-        <h5>How do I get the 'backer' role on Discord?</h5>
-        <p class="text-secondary " style="font-size: 17px;">Use the <span class="fw-bold text-dark">/opencollective</span> command in our discord server to verify your Open Collective account. You will then be automatically given the 'backer' role. You will be prompted to provide your Open Collective username, which is found in the URL of your Open Collective profile. For example, if your profile URL is <span class="fw-bold text-dark">https://opencollective.com/rick-astley </span> your username is <span class="fw-bold text-dark
-          
-          ">rick-astley.</span></p>
-        <p class="text-secondary pb-3" style="font-size: 17px;">If you want to remove the role for any reason, contact staff on discord through ModMail.</p>
-
-        <h5>Do users with the 'backer' role get any exclusive benefits?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">No. The role is just a way for us to show our appreciation for your support. </p>
-
-        <h5>Does becoming a donor mean I get priority support in the chat?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">No. We feel strongly that everyone should be treated equally in our community, regardless of whether or not they are a donor. </p>
-
-        <h5>I cannot afford to donate right now. What are some other ways I can help The Odin Project?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">You can help us by <u class="text-primary">contributing to our open source projects</u>. You can also help us by spreading the word about The Odin Project Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis rerum dolorum omnis totam, dicta odio alias sed enim temporibus. </p>
-
-        <h5>What ever happened to Thinkful? Viking Code School?</h5>
-        <p class="text-secondary" style="font-size: 17px;">When The Odin Project was created by Eric Trautman in 2013,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit, quibusdam amet facere at quia ipsa? Nobis iusto ullam pariatur deleniti, tenetur iste quasi nemo eligendi natus.</p>
-        <p class="text-secondary" style="font-size: 17px;">In late 2017, Viking Code School was acquired by Thinkful. As a part of that acquisition, Thinkful agreed to continue funding The Odin Project, in return for an ad on The Odin Project website.</p>
-        <p class="text-secondary pb-3" style="font-size: 17px;">In 2023, we decided to begin the process of parting ways with Chegg, and become self-funding. We are now funded entirely by donations.</p>
-
-        <h5>I still have questions. How can I contact you?</h5>
-        <p class="text-secondary pb-3" style="font-size: 17px;">You can contact us through modmail on our discord server, or through email. See our <u class="text-primary"> contact us </u>page for details.</p>
-
+      <div class="container text-center py-5 my-5 w-50 mt-5 ">
+        <h2>Support Us!</h2>
+        <p class="pb-3 pt-2">The Odin Project is funded by the community. Join us in empowering learners around the globe by supporting The Odin Project!</p>
+        <button type="button" class="btn btn-outline-secondary ">Learn More</button>
+        <button type="button" class="btn btn-success">Donate Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+      </div>
     </div>
+    <div class="container py-5 my-5 ">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 px-5">
+          <img src="../images/pic1.svg" alt="">
+          <span style="font-family: Caesar Dressing, system-ui; font-size: 20px;">THE ODIN PROJECT</span>
+          <p class="w-75 pt-3">High quality coding education maintained by an open source community.</p>
+        </div>
+        <div  class="col-sm-6 col-md-3 col-lg-2 px-5">
+          <h6 class="ps-4">About Us</h6>
+          <ul type="none" class="ps-4 pb-3">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Success Stories</li>
+          </ul>
+
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-2 px-5">
+          <h6 class="ps-4">Support</h6>
+          <ul type="none" class="ps-4 pb-3">
+            <li> FAQ</li>
+            <li>Contribute</li>
+            <li>Contact us</li>
+          </ul>
+
+        </div>
+        <div class= "col-sm-6 col-md-3 col-lg-2 px-5">
+          <h6 class="ps-4">Guides</h6>
+          <ul type="none" class="ps-4 pb-3">
+            <li> Community guides</li>
+            <li>Installation guides</li>
+          </ul>
+
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-2 px-5">
+          <h6 class="ps-4">Legal</h6>
+          <ul type="none" class="ps-4 pb-3">
+            <li> Terms</li>
+            <li>Privacy</li>
+          </ul>
+
+        </div>
+
+      </div> 
+      <div >
+        <hr>
+        <h6 class="text-secondary pt-3">The Odin Project. All rights reserved.</h6>
+      </div>       
     </div>
 
-      <div class="container py-5 my-5 ">
-        <div class="footer d-flex">
-          <div class="px-5">
-            <img src="../images/pic1.svg" alt="">
-            <span style="font-family: Caesar Dressing, system-ui; font-size: 20px;">THE ODIN PROJECT</span>
-            <p class="w-75 pt-3">High quality coding education maintained by an open source community.</p>
-            <div class="text-secondary py-3">
-              <span><i class="fab fa-github px-2"></i></i></span>
-              <span><i class="fab fa-discord px-2"></i></i></span>
-              <span><i class="fab fa-facebook footer-icons px-2"></i></span> 
-              <span><i class="fa-brands fa-twitter px-2"></i></span>
-            </div>
-          </div>
-          <div  class="px-5">
-            <h6 class="ps-4">About Us</h6>
-            <ul type="none" class="ps-4 pb-3">
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Success Stories</li>
-            </ul>
-  
-          </div>
-          <div class="px-5">
-            <h6 class="ps-4">Support</h6>
-            <ul type="none" class="ps-4 pb-3">
-              <li>FAQ</li>
-              <li>Contribute</li>
-              <li>Contact us</li>
-            </ul>
-  
-          </div>
-          <div class="px-5">
-            <h6 class="ps-4">Guides</h6>
-            <ul type="none" class="ps-4 pb-3">
-              <li> Community guides</li>
-              <li>Installation guides</li>
-            </ul>
-  
-          </div>
-          <div class="px-5">
-            <h6 class="ps-4">Legal</h6>
-            <ul type="none" class="ps-4 pb-3">
-              <li> Terms</li>
-              <li>Privacy</li>
-            </ul>
-  
-          </div>
-  
-        </div> 
-       
 
-        <script src="../bootstrap.bundle.min.js"></script>
-      </body>
-      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="../js/bootstrap.bundle.min.js.js"></script>
+</body>
+</html>
