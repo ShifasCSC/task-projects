@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2874f0;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#product-list, #cart-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card, .cart-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card img, .cart-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h2, .cart-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p, .cart-item p {
+    color: #555;
+    font-size: 16px;
+}
+
+.add-to-cart-btn {
+    background-color: #ff6200;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e55b00;
+}
+/*  */
+/* Add this to your existing styles.css */
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-btn:hover {
+    background-color: #e55b00;
+}
+
+.sa{
+   margin-left: 200px;
+}
+
+.sa a{
+    margin-left: 70px;
+
+  
+}
+
+/*  */
+.secondary-nav {
+    margin-top:10px;
+    background-color:black;
+    padding: 10px;
+    text-align: center;
+    height: 2vh;
+}
+
+.secondary-nav p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: -8px;
+    
+}
+.container{
+    margin-left: 200px;
+    margin-right: 200px;
+}
