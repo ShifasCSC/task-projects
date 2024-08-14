@@ -79,9 +79,16 @@ header nav a:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+.fair{
+    color: green;
+}
 
 .product-info .add-to-cart-btn:hover {
     background-color: #c0392b;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .product-details-container img {

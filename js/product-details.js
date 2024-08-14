@@ -29,8 +29,14 @@ function displayProductDetails(product) {
             <div class="product-info">
                 <h2>${product.title}</h2>
                 <p>${product.description}</p>
-                <p class="price">$${product.price}</p>
-                <button class="add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
+                <p class="price">Price$${product.price}</p>
+                 <p><span class="fair">${product.discountPercentage}%off</span> 
+            <span>(${product.availabilityStatus})</span></p>
+            <p> <span>Brand:${product.brand} </span>,
+            Stocks(${product.stock})</p>
+            <p>Returnpolicy:${product.returnPolicy}</p>
+               
+                 <button class="add-to-cart-btn" data-id="${product.id}"><a href="./cart.html">Add to cart</a></button>
             </div>
         </div>
     `;

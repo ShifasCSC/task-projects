@@ -13,9 +13,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.fair{
+    color: green;
+}
 
 header h1 {
-    margin: 0;
+    margin-left: 1%;
 }
 
 nav a {
@@ -57,7 +60,7 @@ nav a {
 }
 
 .add-to-cart-btn {
-    background-color: #ff6200;
+    background-color: #2874f0;
     color: white;
     padding: 10px;
     border: none;
@@ -67,7 +70,7 @@ nav a {
 }
 
 .add-to-cart-btn:hover {
-    background-color: #e55b00;
+    background-color: #2874f0;
 }
 /*  */
 /* Add this to your existing styles.css */
@@ -87,8 +90,8 @@ nav a {
 
 #search-btn {
     padding: 10px 20px;
-    background-color: #ff6200;
-    color: white;
+    background-color:  #f9f4f4;
+    color: rgb(9, 9, 9);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -96,11 +99,11 @@ nav a {
 }
 
 #search-btn:hover {
-    background-color: #e55b00;
+    background-color: #2874f0;
 }
 
 .sa{
-   margin-left: 200px;
+   margin-left: 10px;
 }
 
 .sa a{

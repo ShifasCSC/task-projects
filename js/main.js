@@ -36,7 +36,10 @@ function displayProducts(products) {
         productCard.innerHTML = `
             <img src="${product.thumbnail}" alt="${product.title}" style="max-width: 100%;">
             <h2>${product.title}</h2>
-            <p>$${product.price}</p>
+            <h6>$${product.price}</h6>
+             <p><span class="fair">${product.discountPercentage}%off</span> 
+            <span>${product.category}</span></p>
+
             <button class="add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
         `;
 
