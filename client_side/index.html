@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <h1>TEACHERS DATATABLE</h1>
+        </div>
+        <div class="navbar-right">
+            <input type="search" placeholder="search" id="search">
+            <a href="http://localhost:3001/add" class="btn-add-user">Add User</a>
+        </div>
+    </div>
+    
+    <div class="form-container" id="main">
+        <form>
+            <div class="form-row">
+                <input type="text" class="ty" id="name"  value="name"  placeholder="Name">
+                <input type="text" class="ty" id="desig" value="desig"   placeholder="Designation">
+            </div>
+            <div class="form-row">
+                <input type="text" class="ty" id="salary" value="salary" placeholder="Salary">
+                <input type="text" class="ty" id="exp" value="exp" placeholder="Experience">
+           </div>
+           
+            <div class="form-actions">
+                <button type="button" class="btn">Save</button>
+                <button type="button" class="btn">Delete</button>
+                <button type="button" class="btn">Edit</button>
+            </div>
+        </form>
+    </div> 
+    <script src="./js/custom.js"></script>
+</body>
+</html>
