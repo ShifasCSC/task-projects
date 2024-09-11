@@ -1,5 +1,6 @@
 
 
+
 async function getTeachers(){
 const res=await fetch("http://localhost:3001/getTeachers")
 const teachers=await res.json();
@@ -7,14 +8,18 @@ str=""
 teachers.map((teacher)=>{
     str+=` <div class="form-container" id="main">
         <form>
-            <div class="form-row">
-                <input type="text" class="ty" value=${teacher.name} id="name-${teacher._id}" placeholder="Name" disabled="true">
-                <input type="text" class="ty" value=${teacher.Desig} id="desig-${teacher._id}" placeholder="Designation" disabled="true">
-                </div>
-            <div class="form-row">
-                <input type="text" class="ty" value=${teacher.salary} id="salary-${teacher._id}" placeholder="Salary" disabled="true">
-                <input type="text" class="ty" value=${teacher.exp} id="exp-${teacher._id}" placeholder="Experience" disabled="true">
-           </div>
+            <label>name:</label>
+                <input type="text" class="ty" value=${teacher.name} id="name-${teacher._id}" placeholder="Name" disabled="true"><br>
+                <label>designation:</label>
+                <input type="text" class="ty" value=${teacher.Desig} id="desig-${teacher._id}" placeholder="Designation" disabled="true"><br>
+                
+            <label>salary</label>
+                <input type="text" class="ty" value=${teacher.salary} id="salary-${teacher._id}" placeholder="Salary" disabled="true"><br>
+                <label>experience</label>
+                <input type="text" class="ty" value=${teacher.exp} id="exp-${teacher._id}" placeholder="Experience" disabled="true"><br>
+                <label>bonus</label>
+                 <input type="text" class="ty" id="bonus-${teacher._id}"  placeholder="" ><br>
+           
            
             <div class="form-actions">
                 <button type="button" onclick="handleSave('${teacher._id}')" class="btn">Save</button>
@@ -25,6 +30,26 @@ teachers.map((teacher)=>{
     </div> `
 })
    document.getElementById("main").innerHTML=str;
+
+   let bonusSalary=0;
+   teachers.map((teacher)=>{
+    console.log(teacher.exp);
+    
+    if(teacher.exp=="0"){
+        document.getElementById(`bonus-${teacher._id}`).value="Not Eligible"
+        document.getElementById(`bonus-${teacher._id}`).style.color="red";
+        
+    }else if(teacher.exp=="1"){
+        console.log(teacher.salary);
+        bonusSalary=parseInt(teacher.salary)+(parseInt(teacher.salary)*0.1)
+        console.log(bonusSalary);
+        
+         document.getElementById(`bonus-${teacher._id}`).value=bonusSalary
+    }else if(teacher.exp=="2"){
+        bonusSalary=parseInt(teacher.salary)+(parseInt(teacher.salary)*0.1)
+         document.getElementById(`bonus-${teacher._id}`).value=bonusSalary
+    }
+   })
 }
 getTeachers()
 
@@ -63,6 +88,8 @@ document.getElementById("search").addEventListener("keyup",async(e)=>{
         console.log(error);
         
     }
+
+
     
 })
 

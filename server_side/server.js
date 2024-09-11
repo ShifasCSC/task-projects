@@ -92,18 +92,22 @@ if(path.pathname=="/update" && req.method=="PUT")
     let body=""
     req.on("data",(chunk)=>{
         console.log(chunk);
-        body=chunk.toString();
+        body+=chunk.toString();
 
         
     })
     req.on("end",async()=>{
         let gData=JSON.parse(body);
+        console.log("======");
+        
         console.log(gData);
-        updateData={name:gData.name,designation:gData.desig,salary:gData.salary,experience:gData.exp}
-        let ID=gData.id;
-        console.log(ID);
+        updateData={name:gData.name,Desig:gData.designation,salary:gData.salary,exp:gData.experience};//this query is used to update or insert data into the database
+        console.log(gData.id);
+        
+        let _id=new ObjectId(gData.id);
+        console.log(_id);
 
-        await collection.updateOne({ID},{$set:updateData}).then(()=>{
+        await collection.updateOne({_id},{$set:updateData}).then(()=>{
             res.writeHead(200,{"Content-Type":"text/plain"});
             res.end("updated")
         }).catch(()=>{
