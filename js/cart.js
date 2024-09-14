@@ -23,7 +23,9 @@ async function displayCartItems() {
             cartItem.innerHTML = `
                 <img src="${product.thumbnail}" alt="${product.title}" style="max-width: 100%;">
                 <h2>${product.title}</h2>
-                <p>$${product.price}</p>
+                <p><h4><b>$${product.price}</b>
+                <span class="fair">${product.discountPercentage}%off</span></p>
+                 <p>${product.description}</p>
                 <button class="remove-from-cart-btn" data-id="${product.id}">Remove from Cart</button>
             `;
 

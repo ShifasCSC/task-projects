@@ -52,8 +52,8 @@ function addToCart(event) {
     if (!cart.includes(productId)) {
         cart.push(productId);
         localStorage.setItem('cart', JSON.stringify(cart));
-        alert('Product added to cart');
-    } else {
         alert('Product already in cart');
+    } else {
+        alert('Product added to cart');
     }
 }

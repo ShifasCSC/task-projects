@@ -133,3 +133,12 @@ nav a {
     margin-left: 200px;
     margin-right: 200px;
 }
+
+.remove-from-cart-btn{
+    padding: 5px 10px;
+    background-color: #2874f0;
+    border: none;
+    border-radius: 4px;
+    color: #ddd;
+    font-size: 15px;
+}
