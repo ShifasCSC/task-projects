@@ -4,7 +4,7 @@ const fs=require("fs");
 const url=require("url");
 const queryString=require("querystring");
 const {MongoClient,ObjectId}=require("mongodb");
-const { log } = require("console");
+// const { log } = require("console");
 //connect mongodb
 const client=new MongoClient("mongodb://127.0.0.1:27017/");
 const app=http.createServer(async(req,res)=>{
