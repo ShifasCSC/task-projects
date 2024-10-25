@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image to Google Drive</title>
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+    <h2>Upload Image to Google Drive</h2>
+    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <button id="signout_button" style="display: none;" onclick="handleSignoutClick()">Sign Out</button>
+    <br><br>
+    <input type="file" id="file_input" accept="image/*">
+    <button onclick="uploadFile()">Upload Image</button>
+
+   
+
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
